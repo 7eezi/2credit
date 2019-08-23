@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token ="NjExODk4MjEwMzE0NzQ3OTE0.XWAIkQ.BZOah2c3g_WHy1zHgt4_btD0Av0";
 
 
 bot.on('ready', () =>{
@@ -17,7 +16,7 @@ bot.on('ready', () =>{
 
 bot.on('message', message => {
     if (message.author.bot) return;
-    if (message.content.startsWith(".s")) {
+    if (message.content.startsWith(".2s")) {
     if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('You dont have ADMINISTRATOR permission');
     var args = message.content.trim().split(/ +/g).slice(1);
     let cname = args[0];
